@@ -1,0 +1,30 @@
+﻿@model MVCIntegrationKit.Models.DemoModel
+
+@{
+    ViewBag.Title = "Demo";
+}
+
+<h2>PayUMoney Form MVC</h2>
+@using (Html.BeginForm())
+{
+    <div style="margin-left:20px">
+        @Html.Label("Amount")<br />
+        @Html.TextBox("txtamount")<br />
+        @Html.Label("First Name")<br />
+        @Html.TextBox("txtfirstname")<br />
+        @Html.Label("Email Id")<br />
+        @Html.TextBox("txtemail")<br />
+        @Html.Label("Product Information")<br />
+        @Html.TextArea("txtprodinfo")<br />
+        @Html.Label("Phone")<br />
+        @Html.TextBox("txtphone")<br />
+        @Html.Label("Success URL")<br />
+        @Html.TextBox("txtsurl")<br />
+        @Html.Label("Failure URL")<br />
+        @Html.TextBox("txtfurl")<br /><br />
+
+        <button type="submit">Submit</button>
+    </div>
+
+
+}
