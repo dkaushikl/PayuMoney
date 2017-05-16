@@ -37,7 +37,7 @@ namespace MVCIntegrationKit.Controllers
             myremotepost.Add("email", email);
             myremotepost.Add("surl", "http://localhost:3271/Return/Return");
             myremotepost.Add("furl", "http://localhost:3271/Return/Return");
-            myremotepost.Add("service_provider", "");
+            myremotepost.Add("service_provider", "payu_paisa");
 
             string hashString = key + "|" + Generatetxnid() + "|" + amount + "|" + productInfo + "|" + firstName + "|" + email + "|||||||||||" + salt;
             //string hashString = "3Q5c3q|2590640|3053.00|OnlineBooking|vimallad|ladvimal@gmail.com|||||||||||mE2RxRwx";
